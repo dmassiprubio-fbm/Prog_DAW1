@@ -30,7 +30,7 @@ import numpy as np
 # del lista[-1]
 # print(f'las notas que has sintroducido son {lista}')
 
-# ###4###
+# # ###4###
 
 # lista = []
 # num = int(input('introduce un numero: '))
@@ -45,16 +45,14 @@ import numpy as np
 
 ###5###
 
-lista = []
-num = int(input('introduce un numero: '))
-lista.append(num)
+# lista = []
+# num = int(input('introduce un numero: '))
+# lista.append(num)
+# num = int(input(f'introduce un numero mayor que {lista[-1]}: '))
 
+# while num > lista[-1]:
+#     lista.append(num)
+#     num = int(input(f'introduce un numero mayor que {lista[-1]}: '))
+    
 
-while num >= lista[-1]:
-
-    num = int(input(f'introduce un numero mayor que {lista[-1]}: '))
-    lista.append(num)
-
-
-
-print(lista)
+# print("Los numero introduciods son: ", ", ".join(str(i)for i in lista))
