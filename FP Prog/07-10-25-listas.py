@@ -30,7 +30,7 @@ import numpy as np
 # del lista[-1]
 # print(f'las notas que has sintroducido son {lista}')
 
-# # ###4###
+# ###4###
 
 # lista = []
 # num = int(input('introduce un numero: '))
@@ -56,3 +56,51 @@ import numpy as np
     
 
 # print("Los numero introduciods son: ", ", ".join(str(i)for i in lista))
+
+# ###6###
+
+# lista = []
+# num = int(input("introduce un numero: "))
+# num2 = int(input("introduce un numero: "))
+# num3 = (num)
+# lista.append(num)
+# lista.append(num2)
+
+# while num3 in range(num, num2 + 1):
+#     num3 = int(input(f"introduce un numero entre {num} y {num2}: "))
+#     lista.append(num3)
+
+# print("Los numero introduciods son: ", ", ".join(str(i)for i in lista))
+
+# ###7###
+
+# lista = []
+# num = int(input('Introduce un numero limite:' ))
+# contador = (0)
+
+# while contador < num:
+#     num2 = int(input("introdcue un numero para sumar: "))
+#     lista.append(num2)
+#     contador = contador + num2
+
+# print(f"Has llegado a {num} introduciendo estos numero: ", ", ".join(str(i)for i in lista))
+
+# ###8###
+
+# lista = []
+# num = int(input("Introduce un numero limite: "))
+# contador = (0)
+
+# while contador != num:
+#     num2 = int(input("introdcue un numero: "))
+#     contador = num2 + contador
+#     if contador <= num:
+#         lista.append(num2)
+#     elif contador > num:
+#         print('sobrepasas el limite')
+#         contador = contador - num2
+
+# print(f"Has llegado a {num} introduciendo estos numero: ", ", ".join(str(i)for i in lista))
+
+###9###
+
