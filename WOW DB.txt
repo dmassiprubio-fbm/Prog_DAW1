@@ -1,0 +1,31 @@
+create table Student(
+id int primary key auto_increment,
+name varchar(255),
+surname varchar(255),
+date_of_birth date);
+
+insert into Student (name, surname, date_of_birth)values
+('Ganbriel', 'Riera', '19831128'),
+('Jaume', 'Barcelo', '19790907'),
+('Camilo', 'Peñas', '20071111');
+
+insert into Student (name, surname, date_of_birth)values
+('Pedro', 'Mascaró', '20060906');
+
+select name, timestampdiff(year, date_of_birth, curdate()) as age from Student
+
+create table Email(
+student_id int,
+email_address varchar (255),
+primary key (student_id, email_address),
+foreign key (student_id) references Student(id)
+);
+
+insert into Email values
+(2, 'my_email@example.comm'),
+(3, 'another@gmail.comm'),
+(4, 'second_email@example.comm');
+
+select name, email_address
+from 'Student'
+join 'Email' on
